@@ -67,7 +67,7 @@ export default function Calculator() {
         result = previousNumber - currentNumber;
         break;
       case "%":
-        result = previousNumber % currentNumber;
+        result = (previousNumber / currentNumber) * 100;
         break;
       case "^":
         result = Math.pow(previousNumber, currentNumber);
